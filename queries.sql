@@ -1,31 +1,3 @@
--- Top 5 clientes con mayor gasto
-
-SELECT
-    cliente,
-    SUM(total) AS total_gastado
-FROM ventas
-GROUP BY cliente
-ORDER BY total_gastado DESC
-LIMIT 5;
-
-
--- Productos más vendidos
-
-SELECT
-    producto,
-    SUM(cantidad) AS unidades_vendidas
-FROM ventas
-GROUP BY producto
-ORDER BY unidades_vendidas DESC;
-
-
--- Venta promedio
-
-SELECT
-    AVG(total) AS venta_promedio
-FROM ventas;
-
-
 -- Total gastado por cliente
 
 SELECT
@@ -40,3 +12,34 @@ JOIN productos pr
     ON dp.producto_id = pr.id
 GROUP BY c.nombre
 ORDER BY total_gastado DESC;
+
+
+-- Productos más vendidos
+
+SELECT
+    pr.nombre,
+    SUM(dp.cantidad) AS unidades_vendidas
+FROM productos pr
+JOIN Detalle_Pedidos dp
+    ON pr.id = dp.producto_id
+GROUP BY pr.nombre
+ORDER BY unidades_vendidas DESC;
+
+
+-- Cantidad de pedidos por cliente
+
+SELECT
+    c.nombre,
+    COUNT(p.id) AS cantidad_pedidos
+FROM clientes c
+JOIN pedidos p
+    ON c.id = p.cliente_id
+GROUP BY c.nombre
+ORDER BY cantidad_pedidos DESC;
+
+
+-- Precio promedio de productos
+
+SELECT
+    AVG(precio) AS precio_promedio
+FROM productos;
