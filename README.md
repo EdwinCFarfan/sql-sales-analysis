@@ -62,8 +62,8 @@ ORDER BY total_gastado DESC;
 
 | Cliente | Cantidad de Pedidos |
 |----------|----------:|
+| Juan Perez | 2 |
 | Maria Gomez | 1 |
-| Juan Perez | 1 |
 | Carlos Ruiz | 1 |
 
 ---
