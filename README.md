@@ -15,9 +15,9 @@ La base de datos contiene las siguientes tablas:
 - pedidos
 - detalle_pedidos
 
-## 📌 Consulta Destacada
+## 📌 Consultas Realizadas
 
-### Total gastado por cliente
+### 1. Total gastado por cliente
 
 ```sql
 SELECT
@@ -34,13 +34,47 @@ GROUP BY c.nombre
 ORDER BY total_gastado DESC;
 ```
 
-### Resultado
+#### Resultado
 
 | Cliente | Total Gastado |
 |----------|----------:|
 | Juan Perez | 1250 |
 | Carlos Ruiz | 1200 |
 | Maria Gomez | 50 |
+
+---
+
+### 2. Productos más vendidos
+
+#### Resultado
+
+| Producto | Unidades Vendidas |
+|----------|----------:|
+| Notebook | 2 |
+| Mouse | 2 |
+| Teclado | 1 |
+
+---
+
+### 3. Cantidad de pedidos por cliente
+
+#### Resultado
+
+| Cliente | Cantidad de Pedidos |
+|----------|----------:|
+| Maria Gomez | 1 |
+| Juan Perez | 1 |
+| Carlos Ruiz | 1 |
+
+---
+
+### 4. Precio promedio de productos
+
+#### Resultado
+
+| Métrica | Valor |
+|----------|----------:|
+| Precio Promedio | 425.0 |
 
 ## 🛠️ Habilidades Demostradas
 
@@ -49,6 +83,8 @@ ORDER BY total_gastado DESC;
 - GROUP BY
 - ORDER BY
 - SUM()
+- COUNT()
+- AVG()
 - Diseño de bases de datos relacionales
 - Análisis de datos
 
@@ -57,6 +93,7 @@ ORDER BY total_gastado DESC;
 - SQL
 - SQLite
 - DB Browser for SQLite
+- GitHub
 
 ## 👨‍💻 Autor
 
