@@ -1,21 +1,26 @@
 # 📊 SQL Sales Analysis
 
-Proyecto de análisis de datos utilizando SQL.
+Proyecto de análisis de ventas utilizando SQL.
 
 ## Objetivo
 
-Analizar información de ventas para obtener insights de negocio.
+Analizar datos comerciales para identificar patrones de venta, clientes destacados y productos con mejor rendimiento.
 
-## Habilidades utilizadas
+## Consultas realizadas
+
+- Top clientes por facturación
+- Productos más vendidos
+- Venta promedio
+- Agregaciones con SUM y AVG
+
+## Habilidades demostradas
 
 - SELECT
 - WHERE
-- INNER JOIN
-- LEFT JOIN
 - GROUP BY
-- HAVING
-- Subconsultas
+- ORDER BY
 - Funciones de agregación
+- Análisis de datos
 
 ## Tecnologías
 
@@ -25,3 +30,5 @@ Analizar información de ventas para obtener insights de negocio.
 ## Autor
 
 Edwin Carvallo Farfan
+
+GitHub: https://github.com/EdwinCFarfan
