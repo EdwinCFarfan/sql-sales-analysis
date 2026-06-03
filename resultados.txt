@@ -1,2 +1,24 @@
+CONSULTA: Total gastado por cliente
 
-Resultados pendientes de generación.
+Juan Perez    1250
+Carlos Ruiz   1200
+Maria Gomez   50
+
+
+CONSULTA: Productos más vendidos
+
+Notebook      2
+Mouse         2
+Teclado       1
+
+
+CONSULTA: Cantidad de pedidos por cliente
+
+Maria Gomez   1
+Juan Perez    1
+Carlos Ruiz   1
+
+
+CONSULTA: Precio promedio de productos
+
+425.0
