@@ -1,8 +1,0 @@
--- Productos más vendidos
-
-SELECT
-    producto,
-    SUM(cantidad) AS total
-FROM ventas
-GROUP BY producto
-ORDER BY total DESC
