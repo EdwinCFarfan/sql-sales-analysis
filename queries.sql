@@ -24,3 +24,19 @@ ORDER BY unidades_vendidas DESC;
 SELECT
     AVG(total) AS venta_promedio
 FROM ventas;
+
+
+-- Total gastado por cliente
+
+SELECT
+    c.nombre,
+    SUM(pr.precio * dp.cantidad) AS total_gastado
+FROM clientes c
+JOIN pedidos p
+    ON c.id = p.cliente_id
+JOIN Detalle_Pedidos dp
+    ON p.id = dp.pedido_id
+JOIN productos pr
+    ON dp.producto_id = pr.id
+GROUP BY c.nombre
+ORDER BY total_gastado DESC;
