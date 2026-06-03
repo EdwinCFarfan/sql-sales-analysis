@@ -14,8 +14,8 @@ Teclado       1
 
 CONSULTA: Cantidad de pedidos por cliente
 
-Maria Gomez   1
-Juan Perez    1
+Juan Perez   2
+Maria Gomez    1
 Carlos Ruiz   1
 
 
